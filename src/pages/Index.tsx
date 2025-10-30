@@ -176,6 +176,67 @@ const Index = () => {
           <div className="mb-20 md:mb-24 max-w-5xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground tracking-tight">
+                Примеры услуг
+              </h2>
+              <p className="text-muted-foreground text-base font-medium">
+                Ориентировочная стоимость наших услуг
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 md:gap-5 mb-8">
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Возврат долга</h3>
+                  <span className="text-sm text-primary font-semibold">от 30%</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Помощь в возврате задолженности от недобросовестных заёмщиков. 
+                  Стоимость зависит от суммы долга и сложности ситуации.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Разбор ситуации</h3>
+                  <span className="text-sm text-primary font-semibold">от 50k ₽</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Профессиональное решение конфликтных ситуаций с недобросовестными партнёрами или обидчиками.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Информационный поиск</h3>
+                  <span className="text-sm text-primary font-semibold">от 20k ₽</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Сбор и анализ информации об объекте. Подробная инфографика и детальный отчёт.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Консультация</h3>
+                  <span className="text-sm text-primary font-semibold">от 10k ₽</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Профессиональная консультация по вашей ситуации с рекомендациями по дальнейшим действиям.
+                </p>
+              </Card>
+            </div>
+
+            <Card className="p-5 bg-primary/5 backdrop-blur-xl border-primary/20">
+              <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                Точная стоимость определяется после анализа вашей ситуации. 
+                Цены указаны ориентировочно и могут варьироваться в зависимости от сложности задачи.
+              </p>
+            </Card>
+          </div>
+
+          <div className="mb-20 md:mb-24 max-w-5xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground tracking-tight">
                 Отзывы клиентов
               </h2>
               <p className="text-muted-foreground text-base font-medium">
