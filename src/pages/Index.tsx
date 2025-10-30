@@ -207,6 +207,26 @@ const Index = () => {
 
               <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
                 <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Силовые воздействия</h3>
+                  <span className="text-sm text-primary font-semibold">от 300k ₽</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Комплексное силовое решение сложных ситуаций. Профессиональный подход и гарантия результата.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-base font-bold text-foreground">Доносы</h3>
+                  <span className="text-sm text-primary font-semibold">от 350k ₽</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Официальное информирование компетентных органов с полным пакетом документов и доказательств.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
+                <div className="flex justify-between items-start mb-3">
                   <h3 className="text-base font-bold text-foreground">Информационный поиск</h3>
                   <span className="text-sm text-primary font-semibold">от 70k ₽</span>
                 </div>
