@@ -86,8 +86,7 @@ const Index = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground tracking-tight leading-tight">
-              Профессиональные услуги<br/>
-              <span className="text-primary">любой сложности</span>
+              <span className="text-primary">СПОРТИКИ</span>
             </h1>
             
             <p className="text-base md:text-lg text-muted-foreground mb-4 max-w-2xl leading-relaxed">
