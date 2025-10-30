@@ -71,60 +71,64 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0F172A]">
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
-        
-        <div className="container mx-auto px-4 py-20 relative">
-          <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-32">
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-6 py-2 mb-8 animate-fade-in">
-              <Icon name="Shield" className="text-primary" size={20} />
-              <span className="text-sm font-medium">100% конфиденциальность и анонимность</span>
+    <div className="min-h-screen bg-background relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
+      
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+
+      <div className="relative">
+        <div className="container mx-auto px-4 py-24 md:py-32">
+          <div className="flex flex-col items-center text-center max-w-5xl mx-auto mb-24 md:mb-32">
+            <div className="inline-flex items-center gap-2 bg-card/50 backdrop-blur-xl border border-primary/20 rounded-full px-5 py-2.5 mb-10 shadow-lg">
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-muted-foreground">100% Конфиденциальность</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-white via-primary to-secondary bg-clip-text text-transparent leading-tight animate-fade-in">
-              Силовые услуги любой сложности
+            <h1 className="text-6xl md:text-8xl font-black mb-8 text-foreground tracking-tight leading-none">
+              Силовые услуги<br/>
+              <span className="text-primary">любой сложности</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-4 max-w-2xl animate-fade-in">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl font-medium leading-relaxed">
               Организуем и выполним для вас любые заказы по силовым акциям, накажем обидчика, вернём долг и многие другие услуги
             </p>
             
-            <p className="text-lg text-secondary mb-8 animate-fade-in">
-              Имеем большой опыт работы в теневой сфере. Доверьте работу профессионалам!
+            <p className="text-base text-primary mb-12 font-semibold">
+              Большой опыт работы в теневой сфере • Доверьте работу профессионалам
             </p>
 
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-fade-in"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-10 py-7 rounded-xl shadow-2xl hover:shadow-primary/20 transition-all hover:scale-[1.02] border border-primary/20"
             >
               <Icon name="Send" className="mr-2" size={20} />
               Связаться в Telegram
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-32">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-24 md:mb-32 max-w-6xl mx-auto">
             {stats.map((stat, index) => (
               <Card 
                 key={index}
-                className="p-8 bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all hover:scale-105 backdrop-blur-sm"
+                className="p-6 md:p-10 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all hover:scale-[1.02] group"
               >
-                <div className="text-4xl md:text-5xl font-black text-primary mb-2 font-mono">
+                <div className="text-4xl md:text-6xl font-black text-primary mb-3 tracking-tight group-hover:scale-110 transition-transform">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground font-medium">
+                <div className="text-sm md:text-base text-muted-foreground font-medium">
                   {stat.label}
                 </div>
               </Card>
             ))}
           </div>
 
-          <div className="mb-32">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-white to-primary bg-clip-text text-transparent">
+          <div className="mb-24 md:mb-32 max-w-6xl mx-auto">
+            <div className="text-center mb-16 md:mb-20">
+              <h2 className="text-4xl md:text-6xl font-black mb-4 text-foreground tracking-tight">
                 Ключевые преимущества
               </h2>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-lg md:text-xl font-medium">
                 Почему тысячи клиентов выбирают нас
               </p>
             </div>
@@ -133,25 +137,25 @@ const Index = () => {
               {advantages.map((advantage, index) => (
                 <Card 
                   key={index}
-                  className="p-6 bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all hover:scale-105 backdrop-blur-sm group"
+                  className="p-8 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all hover:scale-[1.02] group"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Icon name={advantage.icon} className="text-white" size={28} />
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                    <Icon name={advantage.icon} className="text-primary" size={28} />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{advantage.title}</h3>
-                  <p className="text-muted-foreground">{advantage.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-foreground">{advantage.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{advantage.description}</p>
                 </Card>
               ))}
             </div>
           </div>
 
-          <div className="mb-32">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
-                Отзывы
+          <div className="mb-24 md:mb-32 max-w-6xl mx-auto">
+            <div className="text-center mb-16 md:mb-20">
+              <h2 className="text-4xl md:text-6xl font-black mb-4 text-foreground tracking-tight">
+                Отзывы клиентов
               </h2>
-              <p className="text-muted-foreground text-lg">
-                Цифры говорят сами за себя
+              <p className="text-muted-foreground text-lg md:text-xl font-medium">
+                Реальные результаты реальных людей
               </p>
             </div>
 
@@ -159,39 +163,51 @@ const Index = () => {
               {reviews.map((review, index) => (
                 <Card 
                   key={index}
-                  className="p-6 bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all hover:scale-105 backdrop-blur-sm"
+                  className="p-8 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all hover:scale-[1.02]"
                 >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                      <Icon name="User" className="text-white" size={20} />
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Icon name="User" className="text-primary" size={20} />
                     </div>
-                    <div className="font-bold">{review.name}</div>
+                    <div className="font-bold text-foreground">{review.name}</div>
                   </div>
-                  <p className="text-muted-foreground">{review.text}</p>
+                  <p className="text-muted-foreground leading-relaxed">{review.text}</p>
                 </Card>
               ))}
             </div>
           </div>
 
-          <Card className="p-12 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 backdrop-blur-sm">
-            <div className="text-center max-w-2xl mx-auto">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center mx-auto mb-6">
-                <Icon name="Send" className="text-white" size={36} />
+          <Card className="p-12 md:p-16 bg-card/50 backdrop-blur-xl border-primary/20 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-8">
+                <Icon name="Send" className="text-primary" size={36} />
               </div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">
-                Свяжитесь в Telegram
+              <h2 className="text-3xl md:text-5xl font-black mb-6 text-foreground tracking-tight">
+                Готовы начать?
               </h2>
+              <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
+                Свяжитесь с нами в Telegram для обсуждения вашей задачи
+              </p>
               <Button 
                 size="lg"
-                className="bg-secondary hover:bg-secondary/90 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-10 py-7 rounded-xl shadow-2xl hover:shadow-primary/20 transition-all hover:scale-[1.02]"
               >
                 <Icon name="MessageCircle" className="mr-2" size={20} />
-                в Telegram
+                Написать в Telegram
               </Button>
             </div>
           </Card>
         </div>
       </div>
+
+      <style>{`
+        .bg-grid-pattern {
+          background-image: 
+            linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+          background-size: 64px 64px;
+        }
+      `}</style>
     </div>
   );
 };
