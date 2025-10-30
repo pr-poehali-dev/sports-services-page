@@ -116,7 +116,7 @@ const Index = () => {
                 <h3 className="text-lg font-bold text-foreground mb-3">Важная информация</h3>
                 <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                   <p>
-                    Платформы типа Mega, Hydra и подобные запрещают проводить подобные сделки через гарантов. 
+                    Платформы типа Mega, Kraken и подобные запрещают проводить подобные сделки через гарантов. 
                     Мы работаем напрямую для обеспечения максимальной безопасности.
                   </p>
                   <p>
@@ -187,7 +187,7 @@ const Index = () => {
               <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-base font-bold text-foreground">Возврат долга</h3>
-                  <span className="text-sm text-primary font-semibold">от 30%</span>
+                  <span className="text-sm text-primary font-semibold">от 50%</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Помощь в возврате задолженности от недобросовестных заёмщиков. 
@@ -208,7 +208,7 @@ const Index = () => {
               <Card className="p-6 bg-card/50 backdrop-blur-xl border-border hover:border-primary/40 transition-all">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-base font-bold text-foreground">Информационный поиск</h3>
-                  <span className="text-sm text-primary font-semibold">от 20k ₽</span>
+                  <span className="text-sm text-primary font-semibold">от 70k ₽</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Сбор и анализ информации об объекте. Подробная инфографика и детальный отчёт.
